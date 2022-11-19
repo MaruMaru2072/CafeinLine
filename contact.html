@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="contactscr.js"></script>
+    <title>Cafein Line - Contact Us</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="home.html"><img src="Home/logo.png" class="logo"></a>
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li>
+                        <p id="beverages">Beverages</p>
+                        <ul>
+                            <a href="coffee.html">Coffee</a>
+                            <a href="tea.html">Tea</a>
+                        </ul>
+                    </li>
+                    <li><a href="dessert.html">Dessert</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="payment.html">Payment</a></li>
+                </ul>
+            </nav>
+        </div>
+
+            <div class="contactus">
+                <h1 id="contactus">Contact Us</h1>
+                <form name="orderForm" action="" class="contactform" onsubmit="validateForm(event)">
+                    <div>
+                        <label for="name">
+                            Name
+                            <p class="error" id="error-name"></p>
+                        </label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label for="Email">
+                            Email
+                            <p class="error" id="error-email"></p>
+                        </label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="phonenumber">
+                            Phone Number
+                            <p class="error" id="error-phonenumber"></p>
+                        </label>
+                        <input type="number" name="phonenumber" id="phonenumber">
+                    </div>
+                    
+
+                    <div>
+                        <label for="comments">
+                            Question
+                            <p class="error" id="error-comments"></p>
+                        </label>
+                        <textarea name="commments" id="comments" rows="3"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Send Us Your Message" id="submitbtn">
+                    </div>
+                </form>
+                
+            </div>
+        <div class="footer">
+            <p>© Caffein Line <br> Free Delivery</p>
+            <div class="social">
+                <a href="https://twitter.com/"><img src="Home/twitter.png" alt="twitter" class="twitter"></a>
+                <a href="https://facebook.com/"><img src="Home/facebook.png" alt="facebook" class="facebook"></a>
+                <a href="https://instagram.com/"><img src="Home/instagram.png" alt="instagram" class="instagram"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
